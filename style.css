@@ -1,0 +1,32 @@
+body {
+  color: black;
+  background-image: url("./background1.jpg");
+  background-color: #cccccc;
+  background-size: 82%;
+ }
+
+#menu {
+  color: white;
+  font-weight: bolder;
+   background-color: #57544b;
+  opacity: 0.4;
+  height: 40px;
+text-align: center;
+font-size: 22px;
+font-family: 'Sansita', Verdana, sans-serif, monospace;
+}
+
+#board-name {
+width: 250px;
+font-size: 20px;
+font-weight: bolder;
+padding: 15px;
+}
+
+.btn btn-light {
+  padding: 15px;
+}
+
+.row {
+  padding: 15px;
+}
