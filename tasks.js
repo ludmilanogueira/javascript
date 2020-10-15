@@ -33,6 +33,7 @@ function addItem(event) {
   item.contentEditable = "true";
   item.id = Math.random();
   item.draggable = "true";
+  item.allowDrop = "false";
   list.appendChild(item);
   const removeButton = document.createElement("button");
   removeButton.className = "btn btn-outline-secondary btn-sm";
@@ -76,6 +77,11 @@ function dropItem(event) {
   console.log(event);
   event.preventDefault();
   const data = event.dataTransfer.getData("text");
-  event.target.appendChild(document.getElementById(data));
+  if (event.target.tagName == "DIV") {
+    event.target.appendChild(document.getElementById(data));
+  }
+  else {
+    event.target.parentElement.appendChild(document.getElementById(data));
+  }
 }
 
