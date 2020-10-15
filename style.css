@@ -32,6 +32,11 @@ padding: 15px;
 .row {
   padding: 5px;
   margin: 0px;
+  /* max-width: 100%; */
+  display: flex;
+flex-wrap: wrap;
+  flex-direction: row;
+  align-content: flex-start;
 }
 .card {
   padding-right: 0px;
